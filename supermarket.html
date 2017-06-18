@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Λίστα Supermarket</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="supermarket.css">
+    </head>
+    <body>
+        <header>
+            <h1><img src="assets/logo-list.svg" alt="Logo">Λίστα Supermarket</h1>
+        </header>
+        <main>
+            <!-- The newProductModal Button Trigger -->
+           <div id="newProduct" class="button"><img src="assets/button-plus.svg">Νεό Προϊόν</div>
+            <!-- The newProductModal -->
+            <div id="newProductModal" class="modal">
+                <!-- Modal content -->
+                <div class="newProductModal-content">
+                    <textarea id="insert" placeholder="Εισαγωγή Κειμένου"></textarea>
+                    <span class = insertText>
+                    <div id="ok" class="button"><img src="">ΟΚ</div>
+                    <div id="cancel" class="button"><img src="">Άκυρο</div>
+                    </span>
+                </div>
+            </div>
+            
+            <table id="products">
+                <tr>
+                    <th>Προϊόν</th>
+                    <th>Τιμή</th> 
+                </tr>
+            </table> 
+            
+            <!-- The currentProductModal -->
+             <div id="currentProductModal" class="modal">
+            <!-- The currentProduct Content -->
+                <div class="currentProduct-content">
+                        <div id="insertPrice" class="button"><img src="">Εισαγωγή Τιμής</div>
+                        <div id="edit" class="button"><img src="">Επεξεργασία</div>
+                        <div id="delete" class="button"><img src="">Διαγραφή</div>
+                        <div id="cancel_product" class="button"><img src="" >Ακύρωση</div>
+                </div>
+            </div>
+            
+            <!-- The editProductModal -->
+            <div id="editProductModal" class="modal">
+                <!-- Modal content -->
+                <div class="editProductModal-content">
+                    <textarea id="edit_area"></textarea>
+                    <span class = insertText>
+                    <div id="ok_edit" class="button"><img src="">ΟΚ</div>
+                    <div id="cancel_edit" class="button"><img src="">Άκυρο</div>
+                    </span>
+                </div>
+            </div>
+            
+            
+            <!-- The insertPriceModal -->
+            <div id="insertPriceModal" class="modal">
+                <!-- Modal content -->
+                <div class="insertPriceModal-content">
+                    <textarea id="price" placeholder="Εισαγωγή τιμής"></textarea>
+                    <span class = insertText>
+                    <div id="ok_price" class="button"><img src="">ΟΚ</div>
+                    <div id="cancel_price" class="button"><img src="">Άκυρο</div>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="bottomButtons">
+                <div id="clearList" class="button"><img src="assets/button-delete.svg">Clear</div>
+                <div id="calculateList" class="button"><img src="assets/button-play.svg">Υπολόγισε</div>
+            </div>
+            <hr>
+            <div class="bottomResults">
+                <div id="result">Ποσό για το ταμείο</div>
+                <div id="resultNumber"></div>
+            </div>
+
+
+        </main>
+        <script src="supermarket.js"></script>
+
+    </body>

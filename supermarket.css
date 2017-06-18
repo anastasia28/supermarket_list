@@ -1,0 +1,215 @@
+@font-face {
+    font-family: myFont;
+    src: url("assets/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url(assets/background.svg);
+    background-color: rgb(250,250,250);
+    color: rgb(255,255,255);
+    font-family: myFont, sans-serif;
+    padding-top: 50px; 
+    
+}
+
+h1, table, #result, #resultNumber {
+        color: rgb(80,80,80);
+
+}
+
+header {
+    width: 100%;
+    height: 70px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    vertical-align: middle;
+    margin: 5px;
+}
+
+li, .modal > div > div, .button {
+    border-radius:90px;
+}
+
+textarea, tr, li, div, .button, #resultsShow {
+    font-size: 1.2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none; /*none*/
+}
+
+table, th, td {
+    background-color: #cecddb;
+    margin: auto;
+    border-radius: 20px;
+    border-collapse: collapse;
+    
+}
+
+table {
+    width: 80%;
+    margin-bottom: 50px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px #888888;
+}
+
+td {
+    height: 40px;
+    text-align:center; 
+    vertical-align: bottom;
+}
+
+td:hover {  
+    background-color: #c1bfda;
+}
+
+#insert, #edit_area, #price {
+    display: block;
+    width: 80%;
+    font-family: myFont;
+    margin: 2px auto;
+}
+
+textarea {
+    transition: box-shadow 0.5s;
+}
+
+textarea:focus {
+    box-shadow: 0 0 3px 2px #3c56a6;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    background-color: rgba(80,80,80,0.5);
+    display: none;
+}
+
+
+.modal > div {
+    width: 290px;
+    margin: 10px auto 0 auto;
+    padding: 5px;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 5px;
+    background-color: rgb(250,250,250);
+}
+
+.modal > div > div  {
+    text-align: center;
+    margin: 5px auto;
+    padding: 7px;
+    max-width: auto;
+    max-height: 45;
+    background-color: #99D468;
+}
+
+.insertText > div {
+    text-align: center;
+    width: 60px;
+    margin: 5px auto;
+    padding: 7px;
+    width: 60px;
+    max-width: auto;
+    max-height: 45;
+    background-color: #99D468;
+}
+
+
+.insertText,.bottomButtons, .bottomResults{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bottomResults {
+    width: 50%;
+    margin-bottom: 50px;
+    margin: 30px auto;
+}
+
+.bottomResults> div{
+ display: inline;
+ font-size: 1.5rem;
+
+}
+
+#resultNumber{
+    border: 2px solid red;
+    background-color: rgb(250,250,250);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 10px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #888888;
+}
+
+
+#newProduct{
+    margin: 20px auto;
+    padding:1px;
+    max-width: 230px;
+    max-height: 45;
+    background-color: #99D468;
+}
+
+.bottomButtons > div{
+    padding: 5px;
+    margin: 30px;
+    font-size: 12px;
+    width: 30%;
+    display: inline-block; 
+}
+
+
+#clearList, #cancel, #cancel_edit, #cancel_price, #cancel_product, #delete {
+    background-color: #FF0000;
+}
+
+#calculateList {
+    background-color: #99D468;
+}
+
+
+#calculateList:hover, #clearList:hover, #cancel:hover ,#cancel_edit:hover, #cancel_price:hover, #delete:hover, #cancel_product:hover #newProduct:hover {
+        background-color: rgb(165,165,165);
+        cursor: pointer;
+
+}
+
+.modal > div > div:hover, .button{
+    cursor: pointer;
+    background-color: rgb(165,165,165);
+}
+
+.button img {
+    margin-left: 5px;
+}
